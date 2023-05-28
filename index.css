@@ -1,0 +1,122 @@
+html {
+    height: 100%;
+  }
+  body {
+    
+    font-family: sans-serif;
+    
+    background: #171717;
+  }
+  
+  header{
+
+    width: 40%;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 31%;
+    background: rgba(14, 13, 13, 0.2);
+    
+    
+  }
+ header .L{
+font-size: 25px;
+font-weight: bold;
+color: #1a52eb;
+letter-spacing: 2px;
+cursor: pointer;
+
+
+  }
+nav li{
+    display:inline-block;
+    list-style: none;
+    padding: 0px 20px;
+}
+a,button{
+
+    font-size: 20px;
+    font-weight: 500;
+    color: #1a52eb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button{
+    background: rgb(190, 185, 190);
+    border: 2px solid #16100b;
+    border-radius: 10px;
+    padding: 9px 25px;
+}
+nav li a:hover {
+
+    color:#1a52eb;
+    transition: all ;
+    transition: 0.3s
+}
+.L:hover{
+    color:#1a52eb;
+    transition: all ;
+    transition: 0.3s
+
+}
+
+  
+  .box {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background:  rgb(190, 185, 190);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(15, 15, 15, 0.6);
+    border-radius: 40px;
+  }
+  
+  .box h2 {
+    margin:auto;
+    padding: 10%;
+    color: #1a52eb;
+    text-align: center;
+  }
+  
+  .Info {
+    position: relative;
+  }
+  
+   .Info input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #0c0909;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #0f0a0a;
+    outline:auto;
+    background: transparent;
+
+    
+   
+  }
+   .Info label {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    padding: 10px 0;
+    font-size: 17px;
+    color: #050404;
+    transition: 0.5s;
+
+  }
+
+   .Info input:focus ~ label,
+   .Info input:valid ~ label {
+    top: -35px;
+    left: 0;
+    right: 20px;
+    color: #1a52eb;
+    font-size: 18px;
+  }
